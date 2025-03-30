@@ -1,0 +1,99 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1b1b1b;  /* Dark Gray */
+    color: #e0e0e0;  /* Light Gray */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #1f2a40;  /* Navy Blue */
+    color: #f4c430;  /* Gold Accent */
+    padding: 20px 30px;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation Bar */
+nav {
+    background: #252f49; /* Darker Navy */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 24px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+    display: inline-block;
+    background: #1f2a40; /* Dark Navy */
+}
+
+nav a:hover {
+    background: #f4c430; /* Gold */
+    color: #1b1b1b;
+    box-shadow: 0px 4px 8px rgba(255, 204, 0, 0.3);
+}
+
+/* Main Content Layout - Now Sections are Stacked */
+main {
+    display: flex;
+    flex-direction: column; /* Ensures sections stack */
+    gap: 25px;
+    max-width: 800px; /* Keeps it centered and clean */
+    margin: auto;
+    padding: 40px;
+}
+
+/* Sections */
+section {
+    padding: 25px;
+    background: #222831; /* Deep Charcoal */
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    margin: 15px 0; /* Adds spacing between stacked sections */
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #1f2a40; /* Navy */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    main {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHarvest Meats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <header>
+        <img src="logo2.png" alt="logo" class="logo">
+        <H1>Welcome to EcoHarvest Meats</H1>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#products">Our Products</a>
+        <a href="login1.html">Staff</a>
+    </nav>
+    <section id="about">
+        <h2>About Our Farm</h2>
+        <p>We are dedicated to sustainable and ethical meat farming. We have cruelty free
+            top quality meats ranging from high quality wagyu steaks to a new experimental meat. 
+            We only offer the highest quality at affordable prices so our goal of making a better, greener earth 
+            can be fullfilled.
+        </p>
+        <button>  
+            <a href="info.html">
+                Read more
+            </a>
+        </button>
+        <div class="banner">
+            <video src="woman1.mp4" autoplay loop muted playsinline></video>
+        </div>
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>Eco-friendly meat products are sourced and produced with sustainability in mind, 
+            reducing environmental impact while maintaining high-quality nutrition. </p>
+            <p>These products often come from farms that prioritize ethical animal treatment, 
+            regenerative agriculture, and lower carbon emissions. Sustainable meat options 
+            may include grass-fed, organic, free-range, or plant-based alternatives, all designed 
+            to minimize deforestation, water consumption, and pollution. </p> 
+            <p>Some companies also use 
+            innovative techniques like lab-grown meat and carbon-neutral processing to further reduce 
+            their footprint. Choosing eco-friendly meat supports biodiversity, improves soil health, 
+            and helps combat climate change while still providing a reliable source of protein</p>
+            <button>
+            <div class="banner">
+            <video src="Meat.mp4" autoplay loop muted playsinline></video>
+            </div>
+    </section>
+    </section>
+    <footer>
+        &copy;1997 EcoHarvest Meats - All Rights Reserved  
+        <a href="#" id="openPopup">Edit</a>
+            <p class="warning">Please note...Any death, injury or insanity caused after consumption of our products is purely accidental. 
+            We will not be help acountable.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="Untitled.png" alt="Popup Image">
+        </div>
+    </div>
+
+    <script>
+        // Get elements
+        const modal = document.getElementById("popupModal");
+        const btn = document.getElementById("openPopup");
+        const closeBtn = document.querySelector(".close");
+
+        // Show modal when clicking the link
+        btn.addEventListener("click", function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+        });
+
+        // Close modal when clicking the close button
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside the image
+        window.addEventListener("click", function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</html>
